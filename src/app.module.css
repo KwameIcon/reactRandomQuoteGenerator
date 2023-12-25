@@ -1,0 +1,71 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/photo-1536585806558-81c7ea4d393d.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 7, 7, 0.7);
+  }
+  .card{
+    position: absolute;
+    width: 80%;
+    height: 100px;
+    left: 10%;
+    margin: auto;
+    top: 45%;
+    font-size: 23px;
+    font-weight: 800;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .quote{
+    width: 500px;
+    margin: auto;
+    animation: moveQuotes 30s ease infinite;
+  }
+  @keyframes moveQuotes {
+    from{
+        margin-left: -300px;
+    }
+    to{
+        margin-left: 900px;
+    }
+    0%{
+        opacity: 0;
+    }
+    10%{
+        color: #fff;
+        opacity: 0.3;
+    }
+    20%{
+        color: cyan;
+        opacity: 1;
+    }
+    30%{
+        color: crimson;
+        opacity: 1;
+    }
+    100%{
+        color: #ccc;
+        opacity: 0;
+    }
+  }
